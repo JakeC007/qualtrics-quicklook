@@ -1,0 +1,3 @@
+# Everything this tool needs. Install with:  pip install -r requirements.txt
+pandas>=1.3
+jupyter

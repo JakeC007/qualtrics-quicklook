@@ -1,0 +1,28 @@
+{
+  "_README": "Map friendly names to Qualtrics question numbers. Open output/codebook.csv to see what each number asked. Edit 'questions', then run notebooks 2 and 3. Fill 'attention_checks' with {question_code: expected_answer} if your survey has any. This file ships pre-filled for the included sample data; delete it (or delete the 'questions' you don't want) and re-run notebook 1 to regenerate from your own export.",
+  "questions": {
+    "participate": "Q1",
+    "age": "Q2",
+    "comfort_sharing": "Q3",
+    "grade": "Q4",
+    "ai_tools_used": "Q5",
+    "attention_check": "Q6"
+  },
+  "straightline_groups": {
+    "Q3": ["Q3_1", "Q3_2", "Q3_3", "Q3_4", "Q3_5", "Q3_6"]
+  },
+  "attention_checks": {
+    "Q6": "Strongly agree"
+  },
+  "quality": {
+    "total_duration_floor_sec": 180,
+    "page_floor_sec": 2.0,
+    "min_fast_pages_to_flag": 2,
+    "recaptcha_min": 0.5,
+    "attention_fail_min": 1,
+    "min_items_for_straightline": 5,
+    "min_straightline_matrices_to_flag": 1,
+    "exclude_min_flags": 2,
+    "count_incomplete_toward_exclusion": false
+  }
+}
